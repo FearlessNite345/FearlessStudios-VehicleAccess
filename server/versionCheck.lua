@@ -47,7 +47,7 @@ local function checkVersion()
 
             if newToCheckNumber < currentVersionNumber then
                 status = "^1" .. resourceName .. " version is from the future!"
-            elseif newToCheckNumber < currentVersionNumber then
+            elseif newToCheckNumber > currentVersionNumber then
                 status = "^1" .. resourceName .. " version is outdated. Please update."
             elseif newToCheckNumber == currentVersionNumber then
                 status = "^2" .. resourceName .. " is up to date!"
